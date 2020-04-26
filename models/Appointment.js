@@ -9,17 +9,23 @@ const AppointmentSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  Date: {
-    type: Date,
+  date: {
+    type: String,
     required: true
   },
-  patients:{
-      type: Array,
-      default: {}
-  },
-  available:{
-      type: Boolean,
-      default: true
+  patients: [
+    {
+      ID: {
+        type: String
+      },
+      bookingdate: {
+        type: String
+      }
+    }
+  ],
+  available: {
+    type: String,
+    default: "yes"
   }
 });
 

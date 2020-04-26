@@ -31,30 +31,30 @@
 </nav>
 
 <div style="margin-top:10%; text-align: center;">
-  <h1>Doctors</h1>
+  <h1>Doctor Slots</h1>
   <hr class="my-4">
   <div class="row mt-5">
     <div class="col-md-6 m-auto">
       
         <%- include ('partials/messages') %>
-        <form action="/users/register" method="POST">
+        <form action="/appointments/docs" method="POST">
           <div class="form-group">
-            <label for="name">Doctor</label>
-            <input type="name" id="name" name="name" class="form-control" placeholder="Enter Name"
-              value="<%= typeof name != 'undefined' ? name : '' %>" />
+            <label for="doctor">Doctor Name</label>
+            <input type="text" id="doctor" name="doctor" class="form-control" placeholder="Enter Doctor"
+              value="<%= typeof doctor != 'undefined' ? doctor : '' %>" />
           </div>
           <div class="form-group">
-            <label for="email">Specialization</label>
-            <input type="special" id="special" name="special" class="form-control" placeholder="Enter Specialization"
+            <label for="specialization">Specialization</label>
+            <input type="text" id="specialization" name="specialization" class="form-control" placeholder="Enter Specialization"
               value="<%= typeof specialization != 'undefined' ? specialization : '' %>" />
           </div>
           <div class="form-group">
-            <label for="Date">Date</label>
-            <input type="date" id="password2" name="password2" class="form-control" placeholder="Confirm Password"
-              value="<%= typeof password2 != 'undefined' ? password2 : '' %>" />
+            <label for="Date">Date and Time of Slot</label>
+            <input type="datetime-local" id="date1" name="date1" class="form-control" placeholder="Enter Date"
+              value="<%= typeof date1 != 'undefined' ? date1 : '' %>" />
           </div>
           <button type="submit" class="btn btn-primary btn-block">
-            Add Doctor
+            Add Slot
           </button>
         </form>
       
