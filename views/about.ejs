@@ -22,20 +22,24 @@
               <a class="nav-link" href="/contact">Contact Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/about">About</a>
+              <a class="nav-link active" href="/about">About</a>
             </li>
           </ul>
-
-          <a href="/users/logout" class="btn btn-secondary" style="margin-left: 650px;">Logout</a>
+          <a href="/users/logout" class="btn btn-secondary" style="margin-left: 600px;">Logout</a>
         </div>
 </nav>
 
-<div style="margin-top:30%; text-align: center;">
-  <h1>Welcome to ASIM, <%= user.name %>!</h1>
+<div class="jumbotron" style="margin-top: 22%; text-align: center;">
+  <h1 class="display-3" style="text-align: center;">ASIM</h1>
+  <h2 style="text-align: center;">Automatic Scheduling and Interactive Machine</h2>
   <hr class="my-4">
-  <p>To start click on "Doctors" to new doctors OR click on Appointments to check the schedules and
-    the appointments for each doctor. </p>
-  <hr class="my-4">
-  <a class="btn btn-primary btn-lg" href="/docs" role="button">Doctors</a>
-  <a class="btn btn-primary btn-lg" href="/appts" role="button">Appointments</a>
+  <p>Hospital no shows is a very big problem, it can cause hospitals and money loss billions of money a year. Hence a
+    group of students from AUS: Mostafa Abuelnoor, Tasneem Batool and Omar El Boutari along with their advisors: Dr.
+    Assim Saghayroon and Dr. Fadi Aloul brainstormed ideas to reduce this loss. We are using machine learning to learn
+    patterns of patients who do not show up to their appointments with an accuracy of 95%, and then feeding this
+    informtation into the scheduling algorithm to reduce the problem drastically. </p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="https://github.com/MostafaAbuelnoor" role="button" target="_blank">Github</a>
+    <a class="btn btn-primary btn-lg" href="/contact" role="button" >Contact Us</a>
+  </p>
 </div>
