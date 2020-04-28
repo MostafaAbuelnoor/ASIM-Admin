@@ -30,6 +30,25 @@
         </div>
 </nav>
 
-<div style="margin-top: 90px;">
+<div style="margin-top:20%; text-align: center;">
+  <h1>Doctor Appointments</h1>
+  <p>Type in the name of the Doctor to check if the appointments of the doctor</p>
+  <hr class="my-4">
+  <div class="row mt-5">
+    <div class="col-md-6 m-auto">
 
+      <%- include ('partials/messages') %>
+      <form action="/appointments/appts" method="POST">
+        <div class="form-group">
+          <label for="doctor">Doctor Name</label>
+          <input type="text" id="doctor" name="doctor" class="form-control" placeholder="Enter Doctor"
+            value="<%= typeof doctor != 'undefined' ? doctor : '' %>" />
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">
+          Check Appointments
+        </button>
+      </form>
+      
+    </div>
+  </div>
 </div>

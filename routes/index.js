@@ -24,6 +24,8 @@ router.get('/contact', ensureAuthenticated, (req, res) => res.render('contact', 
 //Doctors page
 router.get('/docs', ensureAuthenticated, (req, res) => res.render('docs', {user: req.user})); 
 
+//Schedules page
+router.get('/schedule', ensureAuthenticated, (req, res) => res.render('schedule', {user: req.user})); 
 
 
 module.exports = router;
